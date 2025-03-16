@@ -1,6 +1,6 @@
 # PwC_Assignments
 
-JAVA and Python Application - SNEKHA S (Intern - CEDA)
+**JAVA and Python Application** - SNEKHA S (Intern - CEDA)
 
 **Overview**
 
@@ -10,29 +10,29 @@ This repository contains two projects:
 
 ⸻
 
-Features
+**Features**
 
-Web Scraping Tool (Python):
-	•	Scrapes text data from a website using requests and BeautifulSoup.
+**Web Scraping Tool (Python):**	
+        •	Scrapes text data from a website using requests and BeautifulSoup.
 	•	Analyzes SEO by counting word frequency (excluding common stopwords).
 	•	Saves data to a CSV file and SQLite database.
 
-Microservices Application (Java):
-	•	Two microservices: Intern and Training with CRUD functionality.
+**Microservices Application (Java):**	
+        •	Two microservices: Intern and Training with CRUD functionality.
 	•	Linked via REST endpoints.
 	•	Swagger integration for easy API testing and documentation.
 	•	Eureka Server for service registration and discovery.
 
 ⸻
 
-Requirements
+**Requirements**
 
-Python:
-	•	Python 3.8+
+**Python:**	
+        •	Python 3.8+
 	•	requests, beautifulsoup4, pandas, sqlalchemy
 
-Java:
-	•	Java 17+
+**Java:**	
+        •	Java 17+
 	•	Spring Boot
 	•	Maven
 
