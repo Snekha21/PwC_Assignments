@@ -157,5 +157,5 @@ throw new NullPointerException("Intentional Null Pointer");
 @GetMapping("/interns")
 public String getInterns(){
     RestTemplate rest = new RestTemplate();
-    return rest.getForObject("http://localhost:9000/api/intern/interns/attended", String.class);
+    return rest.getForObject("http://localhost:8081/api/intern/interns/attended", String.class);
 }}
