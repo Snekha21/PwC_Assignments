@@ -9,6 +9,7 @@ services:
     container_name: eureka-server
 
   intern-service:
+    container_name: intern-service
     build:
       context: ./InternManagement-Service
     ports:
@@ -19,6 +20,7 @@ services:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8080/eureka/
 
   training-service:
+    container_name: training-service
     build:
       context: ./TrainingsManagement-Service
     ports:

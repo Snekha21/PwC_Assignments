@@ -116,7 +116,7 @@ public class InternController {
 @GetMapping("/trainings")
 public String getTrainings(){
     RestTemplate rest = new RestTemplate();
-    return rest.getForObject("http://localhost:8082/api/trainings/training_list", String.class);
+    return rest.getForObject("http://training-service:8001/api/trainings/training_list", String.class);
 }
   @GetMapping("/interns/attended")
   public ResponseEntity<List<Intern>> findByAttended() {

@@ -34,7 +34,7 @@ public class TrainingController {
    @PostMapping("/add_trainings")
     public ResponseEntity<Training> createTraining(@RequestBody Training training) {
       try {
-        Training _training = trainingRepository.save(new Training(training.getTitle(), training.getDescription(), false));
+        Training _training = trainingRepository.save(new Training(training.getTitle(), training.getDescription(), training.isCompleted()));
         return new ResponseEntity<>(_training, HttpStatus.CREATED);}
         catch (Exception e) {
         return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -157,5 +157,5 @@ throw new NullPointerException("Intentional Null Pointer");
 @GetMapping("/interns")
 public String getInterns(){
     RestTemplate rest = new RestTemplate();
-    return rest.getForObject("http://localhost:8081/api/intern/interns/attended", String.class);
+    return rest.getForObject("http://intern-service:8000/api/intern/interns/attended", String.class);
 }}
