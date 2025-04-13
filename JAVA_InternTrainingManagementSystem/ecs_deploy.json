@@ -1,0 +1,55 @@
+{
+"family": "all-services-task",
+"networkMode": "awsvpc",
+"requiresCompatibilities": ["FARGATE"],
+"cpu": "512",
+"memory": "1024",
+"executionRoleArn": "arn:aws:iam::626635424541:role/ecsTaskExecutionRole",
+"containerDefinitions": [
+{
+"name": "eureka-server",
+"image": "626635424541.dkr.ecr.us-west-2.amazonaws.com/eureka-server:latest",
+"portMappings": [
+{
+"containerPort": 8080,
+"protocol": "tcp"
+}
+],
+"essential": true
+},
+{
+"name": "intern-service",
+"image": "626635424541.dkr.ecr.us-west-2.amazonaws.com/intern-service:latest",
+"portMappings": [
+{
+"containerPort": 8000,
+"protocol": "tcp"
+}
+],
+"essential": true,
+"environment": [
+{
+"name": "EUREKA_CLIENT_SERVICEURL_DEFAULTZONE",
+"value": "http://localhost:8080/eureka/"
+}
+]
+},
+{
+"name": "training-service",
+"image": "626635424541.dkr.ecr.us-west-2.amazonaws.com/training-service:latest",
+"portMappings": [
+{
+"containerPort": 8001,
+"protocol": "tcp"
+}
+],
+"essential": true,
+"environment": [
+{
+"name": "EUREKA_CLIENT_SERVICEURL_DEFAULTZONE",
+"value": "http://localhost:8080/eureka/"
+}
+]
+}
+]
+}
