@@ -152,7 +152,7 @@ This repository contains end-to-end deployment, automation, and integration work
 
 ---
 
-##  Sample App - 4: Bedrock-Powered Chat App
+##  Sample App - 4: Bedrock-Powered Chat in Console
 
 ### 💬 Python Chat Application
 - Created a Console based chat app using AWS Bedrock to leverage foundation models for responses.
@@ -163,6 +163,19 @@ This repository contains end-to-end deployment, automation, and integration work
 
 ---
 
+##  Sample App - 5: Lambda Functions
+
+### 💬 Python Lambda Function
+- Created a simple lambda function using Python
+
+📸 *Output Image:*  
+![Screenshot 2025-04-15 010704](https://github.com/user-attachments/assets/440fd371-eb10-4aeb-bcec-01941b1ea69d)
+![Screenshot 2025-04-15 010653](https://github.com/user-attachments/assets/1bd442f4-d548-48cb-be12-68dde110893d)
+![Screenshot 2025-04-15 010929](https://github.com/user-attachments/assets/22c9005b-e79b-4c9c-a884-176bf30e0f32)
+![Screenshot 2025-04-15 010840](https://github.com/user-attachments/assets/246b0df7-5a26-4103-8237-39f50acb976c)
+
+---
+
 ##  Conclusion
 This collection demonstrates how to:
 - Build microservices using Docker.
@@ -170,6 +183,7 @@ This collection demonstrates how to:
 - Automate workflows via CodeCommit, CodeBuild, and CodePipeline.
 - Define AWS infrastructure as code with Terraform.
 - Use AWS Bedrock for serverless AI applications.
+- Use Lambda for sample Code implementation
 
 ---
 
