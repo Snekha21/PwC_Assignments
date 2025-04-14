@@ -1,8 +1,20 @@
 # AWS Projects Documentation
 Hi, This is Snekha from CEDA!
-This repository contains end-to-end deployment, automation, and integration workflows using Docker, Kubernetes, Terraform, and AWS native services. Each sample showcases a specific real-world use case.
+This repository contains creation, end-to-end deployment, automation, and integration workflows using Docker, Kubernetes, Terraform, and AWS native services. Each sample showcases a specific real-world use case.
 
 ---
+## Craetion of Java Microservices App
+Microservices Application (Java): A Java-based microservice application with two microservices (Intern and Training). It includes CRUD operations, Eureka Server for service discovery, and Swagger for API documentation.
+
+### Service- 1 Eureka Server
+![Screenshot 2025-04-15 000611](https://github.com/user-attachments/assets/6d8b2dda-36e8-4a0c-b27e-378c6135d876)
+### Service - 2 Intern Management 
+![Screenshot 2025-04-15 000819](https://github.com/user-attachments/assets/63e7a76e-4860-41df-b649-60b6f7f6c514)
+![Screenshot 2025-04-15 000843](https://github.com/user-attachments/assets/823c1551-0acd-4161-8e46-0abcc8e7a9f6)
+### Service - 3 Training Management
+![Screenshot 2025-04-15 000804](https://github.com/user-attachments/assets/55dac24d-2e9d-4e41-a3e5-54e2cf0965f2)
+![Screenshot 2025-04-15 000746](https://github.com/user-attachments/assets/1d6d9811-a221-4f06-8e3f-7b0aa31f7fe8)
+
 ##  Sample App - 1: Docker & Kubernetes Deployment
 
 ### 1️⃣ Dockerfiles Setup
