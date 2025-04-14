@@ -3,7 +3,7 @@ Hi, This is Snekha from CEDA!
 This repository contains creation, end-to-end deployment, automation, and integration workflows using Docker, Kubernetes, Terraform, and AWS native services. Each sample showcases a specific real-world use case.
 
 ---
-## Craetion of Java Microservices App
+## Creation of Java Microservices App
 Microservices Application (Java): A Java-based microservice application with two microservices (Intern and Training). It includes CRUD operations, Eureka Server for service discovery, and Swagger for API documentation.
 
 ### Service- 1 Eureka Server
