@@ -15,8 +15,8 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: eureka-server:latest
-          imagePullPolicy: IfNotPresent
+          image: snekha21/eureka-server:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
 
@@ -51,8 +51,8 @@ spec:
     spec:
       containers:
         - name: intern
-          image: intern-service:latest
-          imagePullPolicy: IfNotPresent
+          image: snekha21/intern-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
           env:
@@ -90,8 +90,8 @@ spec:
     spec:
       containers:
         - name: training
-          image: training-service:latest
-          imagePullPolicy: IfNotPresent
+          image: snekha21/training-service:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8001
           env:
